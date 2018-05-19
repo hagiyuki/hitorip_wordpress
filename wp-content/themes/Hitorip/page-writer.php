@@ -53,7 +53,7 @@
                     </div>
                 </aside>
             </section>
-            <div id="have">
+            <div id="have" ckass="fuwatAnimation">
                 <!--                <h2>Have Fun Your Trip!!</h2>-->
             </div>
             <article id="tate">
@@ -79,6 +79,50 @@
                 </section>
             </article>
             <!--
+<section class="section section06 " id="js-section06 ">
+
+    <div class="box box-red"><img src="images/mozi1.jpg"></div>
+    <div class="box box-green"><img src="images/slidep4.jpg" height="700px"></div>
+    <div class="box box-red" id="minip"><img src="images/slidep1.jpg" height="400px"></div>
+</section>
+-->
+            <!--
+<section class="section section05 " id="js-section05 ">
+    <div class="box box-red "></div>
+    <div class="box box-red "></div>
+    <div class="box box-blue "></div>
+    <div class="box box-green "></div>
+</section>
+-->
+            <!--
+
+                <section class="section section06 " id="js-section06 ">
+                </section>
+-->
+
+            <!-- <div class="section03-bg "></div> -->
+            <!--
+        <div class="pagination ">
+            <ul>
+                <li class="pagination-list current " id="js-current01 ">
+                    <a href="#js-section01 " class="pagination-link "></a>
+                </li>
+                <li class="pagination-list " id="js-current02 ">
+                    <a href="#js-section02 " class="pagination-link "></a>
+                </li>
+                <li class="pagination-list " id="js-current03 ">
+                    <a href="#js-section03 " class="pagination-link "></a>
+                </li>
+                <li class="pagination-list " id="js-current04 ">
+                    <a href="#js-section04 " class="pagination-link "></a>
+                </li>
+                <li class="pagination-list " id="js-current05 ">
+                    <a href="#js-section05 " class="pagination-link "></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+-->
 
             <!--     この記事を書いた人   auther-->
             <div id="writer_wrapper" class="fuwatAnime">
