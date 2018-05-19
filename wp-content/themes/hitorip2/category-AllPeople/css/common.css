@@ -1,0 +1,244 @@
+/* ===================================================================
+
+common style
+
+=================================================================== */
+
+html,
+
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+#contents {
+    position: relative;
+    z-index: 2;
+    background-color: #FFFFFF;
+}
+
+.swiper-container {
+    width: 600px;
+    height: 400px;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* ===================================================================
+
+footer style
+
+=================================================================== */
+
+#footer {
+    border-radius: 3px;
+}
+
+#contents {
+    position: relative;
+    z-index: 2;
+    background-color: #FFFFFF;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.modal .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    z-index: 10;
+    min-width: 320px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.modal .modal-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal .btn-close {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.modal .btn-close .line {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+
+.modal .btn-close .line.line01 {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal .btn-close .line.line02 {
+    background-color: #FFFFFF;
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.media {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.media .media-container {
+    margin-left: -20px;
+    text-align: center;
+}
+
+.media .media-list {
+    min-width: 320px;
+    width: 33.33%;
+    float: left;
+}
+
+/*写真の高さ*/
+
+.media .media-list .media-link {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*PC以外の設定？？*/
+
+@media screen and (max-width: 955px) {
+    .media .media-list {
+        float: none;
+        display: inline-block;
+    }
+}
+
+.media .media-list .lower-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-align: left;
+}
+
+.media .media-list .lower-box .tag {
+    display: inline-block;
+}
+
+.media .media-list .lower-box .date {
+    display: inline-block;
+    font-size: 12px;
+    position: relative;
+    top: 1px;
+}
+
+.media .media-list .lower-box .title {
+    margin-top: 5px;
+    line-height: 1.2;
+}
+
+.media .media-list.media-hover-04 img {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 1.2s;
+    transition: all 1.2s;
+}
+
+.media .media-list.media-hover-04:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 1.2s;
+    transition: all 1.2s;
+}
+
+.tag {
+    display: inline-block;
+    line-height: 20px;
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    padding: 0 5px;
+    border-radius: 2px;
+}
+
+.tag.tag-media {
+    background-color: rgb(242, 108, 170);
+}
+
+/* ===================================================================
+
+index style
+
+=================================================================== */

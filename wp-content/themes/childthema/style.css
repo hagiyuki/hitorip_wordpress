@@ -1,0 +1,45 @@
+/*
+Theme Name:   yukiのテーマだよ
+Theme URI:    http://example.com/twenty-twelve-child/
+Description:  Twenty Fifteen Child Theme
+Author:       John Doe
+Author URI:   http://example.com
+Template:     twentytwelve
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  twenty-twelve-child
+*/
+
+.entry-title {
+    border-bottom: 2px dashed #005772;
+}
+
+* {
+    font-family: helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif !important;
+}
+
+.site {
+    border-radius: 10px;
+}
+
+body {
+    background-color: #000;
+}
+
+.main {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    border-bottom: 2px solid #000;
+}
+
+.content {
+    text-align: left;
+}

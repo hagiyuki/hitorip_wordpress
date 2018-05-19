@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+
+.article_photo {
+    display: block;
+    margin: 20px auto;
+}
+
+
+body {
+    line-height: 1.8;
+}
+
+
+.image {
+    max-width: 100%;
+    float: left;
+    margin-right: 1em;
+    width: 34%;
+}
+
+.text-body {
+    overflow: hidden;
+    margin: 20px 20px 50px 50px;
+}
+
+.text-body h4 {
+    text-align: left;
+    font-size: 35px;
+    color: #989391;
+}
+
+.name {
+    margin: 0 0 22px;
+}
+
+/*
+.tab-content > div {
+    overflow: hidden;
+}
+*/
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+    .name {
+        margin-bottom: 44px;
+    }
+    .text-body {
+        overflow: visible;
+        margin: 0;
+        padding: 0;
+    }
+
+    #area_article {
+        display: block!important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .area_map {
+        width 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .area_map img {
+        width 100%;
+    }
+}
+
+
+/* ↓↓↓↓ タブ ↓↓↓↓ */
+
+.tabtab {
+    margin: 150px auto 0;
+    max-width: 1366px;
+}
+
+@media screen and (max-width: 480px) {
+    .tabtab {
+        margin: 10px auto;
+        max-width: 1200px;
+    }
+}
+
+.tab-menu {
+    display: table;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+
+}
+
+.tab-menu li {
+    cursor: pointer;
+    display: table-cell;
+    padding: 0;
+    background-color: rgba(224, 196, 196, 0.58);
+    background-color: rgba(85, 84, 84, 0.31);
+    font-size: 1.2rem;
+    border-radius: 10px 10px 0 0;
+    transition-property: all;
+    transition: 0.3s linear;
+    border: 5px solid white;
+    border-bottom: none;
+
+}
+
+
+.tab-menu li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.tab-menu li:hover {
+    /*     cursor: default;*/
+    background-color: rgba(253, 225, 225, 0.57);
+}
+
+.tab-sub {
+    display: block;
+    font-size: 0.5rem;
+    color: #868585;
+    letter-spacing: 0.14em;
+    font-family: MyFont;
+}
+
+.tab-menu .now {
+    cursor: pointer;
+    display: table-cell;
+    padding: 10px 0;
+    background-color: #f2b2b2;
+    background-color: rgba(203, 190, 189, 0.21);
+    border-left: 1px solid #fff;
+    font-size: 1.2rem;
+    pointer-events: none;
+
+}
+
+@media screen and (max-width: 480px) {
+    .tab-menu li,
+    .tab-menu .now {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/*    背景の色*/
+
+.tab-content {
+    /*    background-color: #ede8e5;*/
+    background-color: rgba(203, 190, 189, 0.21);
+    padding: 20px 0 100px 0;
+    /*
+    background: url(../../common/images/map_haikei.png);opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: 400px;
+*/
+}
+
+.tab-content > div:nth-child(n+2) {
+    display: none;
+}
+
+/*エリアページTOPの設定*/
+
+.area_map {
+    max-width: 300px;
+    margin: 10px 30px
+}
+
+#area_article {
+    display: flex;
+
+    /*
+    background-color: #fffefe;
+    border: 4px double #ddd;
+*/
+    margin: 30px 30px 50px;
+    /*
+    border: 4px solid rgba(129, 128, 128, 0.45);
+    border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+*/
+}
+
+@media screen and (max-width: 480px) {
+    .area_map {
+        margin: 0;
+
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background: rgba(235, 231, 230, 0.99)
+}
+
+
+.swiper-slide {
+    font-size: 18px;
+    color: #080808;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .swiper-slide {
+        font-size: 18px;
+        color: #080808;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        display: block;
+    }
+    .swiper-slide img {
+        width: 100%;
+    }
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/*
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+    font-size: 21px;
+}
+*/
+
+.swiper-slide .text {
+    font-size: 14px;
+    max-width: 600px;
+    line-height: 1.3;
+    margin: 30px;
+}
+
+.swiper-slide .text h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 20px 0 50px;
+    text-align: left;
+    font-family: Myfont;
+
+}
+
+.swiper-slide .text h4 {
+    font-size: 1.5em;
+    color: #b2a9a5;
+    text-align: left;
+}

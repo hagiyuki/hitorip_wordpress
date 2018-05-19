@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+
+.article_photo {
+    display: block;
+    margin: 20px auto;
+}
+
+#TopPhoto {
+    display: block;
+    margin: 0 auto;
+}
+
+.article_photo {
+    display: block;
+    margin: 20px auto;
+}
+
+#single_main {
+    max-width: 1366px;
+    margin: 90px auto 200px;
+    display: flex;
+}
+
+#single_main img {
+    height: 500px;
+}
+
+@media (max-width: 480px) {
+    #single_main {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #single_main img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+#single_back {
+    /*    margin: 100px;*/
+    max-height: 500px;
+    background-color: rgba(221, 250, 216, 0.37);
+}
+
+#single_text {
+    margin: 100px;
+}
+
+@media (max-width: 480px) {
+    #single_text {
+        margin: 0px;
+        padding: 15px 15px;
+        text-align: left;
+    }
+}
+
+#single_text h2 {
+    font-size: 1.5em;
+    color: #d0c6c2;
+    text-align: center;
+    /*    background: linear-gradient(transparent 0%, #d0c6c2 80%);*/
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    #single_text h2 {
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+#single_text h3 {
+    font-size: 1.9em;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: myfont;
+
+}
+
+#single_article {
+    max-width: 1366px;
+    margin: 0 auto 150px;
+}
+
+.text_box h4,
+.text_box_second h4 {
+    font-size: 1.5em;
+    margin: 0 0 20px;
+    font-family: myfont;
+}
+
+.text_box p,
+.text_box_second p {
+    font-size: 1.04em;
+    letter-spacing: 0.1em
+}
+
+.text_box,
+.text_box_second {
+    margin: 0 50px;
+}
+
+.text_box_second {
+    text-align: right;
+}
+
+.box {
+    display: flex;
+    margin: 60px 30px;
+}
+
+.box .img_photo {
+    margin: 0 20px 0 0;
+}
+
+.box:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.box:nth-child(even) .img_photo {
+    margin: 0 0 0 20px;
+}
+
+@media (max-width: 480px) {
+    .box {
+        display: block;
+        padding: 0;
+    }
+    .box .img_photo {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    .box:nth-child(even) .img_photo {
+        width: 100%;
+        margin: 0;
+    }
+    .text_box,
+    .text_box_second,
+    .text_box_second h4,
+    .text_box_second p {
+        text-align: center;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: left;
+    }
+
+}

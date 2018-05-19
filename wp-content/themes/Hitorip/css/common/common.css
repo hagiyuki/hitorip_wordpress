@@ -1,0 +1,443 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*基本のcss設定*/
+
+body {
+    font-family: 'Averia Libre', "メイリオ", "cursive", "ＭＳ 明朝", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "游明朝", "YuMincho, serif";
+
+    font-size: 70%;
+    line-height: 1.6;
+    color: #333;
+    /*    background: linear-gradient(#ffffff, #f0f0f0);*/
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(../../font/yasashisa.otf);
+}
+
+
+
+a:link,
+a:visited,
+a:active {
+    color: #393636;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f48787;
+}
+
+/*ふわっとさせる*/
+
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fuwatAnime {
+        animation: none;
+    }
+}
+
+
+/*ヘッダーエリアの設定*/
+
+h1 {
+    font-size: 2.5em;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: MyFont;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+}
+
+
+h2 {
+    font-weight: bold;
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
+    color: #000000;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+h2 i {
+    margin-left: 8px;
+}
+
+.title_long {
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 0.15em;
+    color: #000000;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-family: MyFont;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 1.8em;
+        letter-spacing: 0.2em;
+        color: #000000;
+        text-align: center;
+        margin-top: 15px;
+
+    }
+
+}
+
+
+
+
+/*PCナビエリアの設定*/
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #ffffff;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.menu {
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*
+#navbar img {
+    margin: -5px 0 0
+}
+*/
+
+#navbar a {
+    display: block;
+}
+
+.me {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+}
+
+#navbar li {
+    float: left;
+    margin: 30px 20px 10px;
+    height: 50px;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    font-size: 1.7em;
+    text-decoration: none;
+}
+
+#navbar #logo {
+    margin: 18px 0 0 100px;
+}
+
+
+#navbar li:nth-child(2) {
+    margin-left: 80px;
+}
+
+#navbar li:nth-child(6) {
+    margin-right: 80px;
+}
+
+#navbar li:nth-child(n+7) {
+    margin: 35px 0px 0px;
+
+}
+
+#navbar li:nth-child(9) {
+    margin-right: 100px;
+
+}
+
+#hamburger {
+    z-index: 100;
+}
+
+@media (min-width: 481px) {
+    #hamburger {
+        display: none;
+    }
+}
+
+.drawer-menu {
+    z-index: 9999;
+}
+
+/*ナビエリア日本語文字の設定*/
+
+.navbarmain-main,
+.navbarmain-main,
+.navbarmain-sub {
+    display: block;
+    text-align: center;
+}
+
+.navbarmain-main {
+    margin-bottom: 0.25em;
+}
+
+.navbarmain-sub {
+    font-size: 0.5em;
+    color: #ccc;
+    letter-spacing: 0.14em;
+    font-family: MyFont;
+}
+
+/*タイトル日本語文字の設定*/
+
+.title-sub {
+    display: block;
+}
+
+.title-sub {
+    font-size: 0.3em;
+    color: #ccc;
+    letter-spacing: 0.14em;
+    font-family: MyFont;
+}
+
+.line {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#mapt .line {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+@media (max-width: 480px) {
+    .line {
+        display: block;
+        margin: 0 auto 5px;
+        /*        padding: 5px;*/
+    }
+
+
+}
+
+/*
+#navbar_footer img {
+    margin: -20px 0 0
+}
+*/
+
+/*トップへ戻るボタン*/
+
+.pagetop {
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+    z-index: 999;
+}
+
+@media (max-width: 480px) {
+    .pagetop {
+        position: fixed;
+        bottom: 0px;
+        right: 5px;
+        z-index: 999;
+        !important;
+    }
+
+}
+
+
+/*もっと読む*/
+
+.more {
+    float: right;
+    font-size: 15px;
+    margin: 0 20px 0 0;
+}
+
+/*フッターの設定*/
+
+footer {
+    position: relative;
+    /*    max-width: 1200px;*/
+    margin: 0 auto 0;
+    padding-top: 15px;
+    background: url(../../images/common/footer2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 480px) {
+    footer {
+        background: url(../../images/footer.jpg);
+        /*        background-size: contain;*/
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+}
+
+/*footerナビエリアの設定*/
+
+#navbar_footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    font-size: 1.7em;
+    display: flex;
+    /*    justify-content: space-between;*/
+}
+
+.navbarmain__menu {
+    display: flex;
+    margin: 20px 20px 0px 200px;
+}
+
+.navbarmain__menu li {
+    margin: 0 30px;
+}
+
+.navbarmain__sns {
+    display: flex;
+    margin: 20px 100px 0 60px;
+}
+
+.navbarmain__sns li {
+    margin: 0 15px;
+}
+
+
+
+#copy {
+    color: floralwhite;
+    margin-top: 380px;
+    padding-bottom: 20px;
+    display: block;
+    text-align: center;
+
+}
+
+
+
+
+
+
+/*スマホ用の設定*/
+
+@media (max-width: 480px) {
+
+    #navbar {
+        display: none;
+    }
+
+    #mainPhoto {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .bxslider li img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .bxslider li {
+        margin: 0 auto;
+    }
+
+    .imageRow {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .set {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .set img {
+        margin: 10px;
+    }
+
+    .bigmap img {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #navbar_footer {
+        display: none;
+    }
+
+    footer {
+        max-width: 100%;
+        background-size: 100% auto;
+        background-size: cover;
+        margin: 30px 0 0;
+
+    }
+    #copy {
+        margin: 300px 0 0;
+    }
+
+
+}

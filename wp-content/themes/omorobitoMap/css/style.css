@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*基本のcss設定*/
+
+body {
+    font-family: 'Averia Libre', "メイリオ", "cursive", "ＭＳ 明朝", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "游明朝", "YuMincho, serif";
+
+    font-size: 70%;
+    line-height: 1.6;
+    color: #333;
+    /*    background: linear-gradient(#ffffff, #f0f0f0);*/
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(../font/uzura.ttf);
+}
+
+
+
+a:link,
+a:visited,
+a:active {
+    color: #393636;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f89a9a;
+}
+
+/*ヘッダーエリアの設定*/
+
+h1 {
+    font-size: 3em;
+    padding-top: 60px;
+    text-align: center;
+    font-family: MyFont;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
+    color: #000000;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+/*PCナビエリアの設定*/
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+#navbar img {
+    margin: -20px 0 0
+}
+
+#navbar ul {
+    margin: 0 auto;
+    max-width: 1154px;
+    width: 100%;
+}
+
+#navbar li {
+    float: left;
+    margin: 40px 25px 10px;
+    height: 60px;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    font-size: 1.7em;
+    text-decoration: none;
+}
+
+/*ナビエリア日本語文字の設定*/
+
+.navbarmain-main,
+.navbarmain-main,
+.navbarmain-sub {
+    display: block;
+    text-align: center;
+}
+
+.navbarmain-main {
+    margin-bottom: 0.25em;
+}
+
+.navbarmain-sub {
+    font-size: 0.5em;
+    color: #ccc;
+    letter-spacing: 0.14em;
+    font-family: MyFont;
+}
+
+/*タイトル日本語文字の設定*/
+
+.title-sub {
+    display: block;
+}
+
+.title-sub {
+    font-size: 0.3em;
+    color: #ccc;
+    letter-spacing: 0.14em;
+    font-family: MyFont;
+}
+
+#line {
+    display: block;
+    margin: 0 auto 40px;
+    padding: 5px;
+}
+
+/*
+#navbar_footer img {
+    margin: -20px 0 0
+}
+*/
+
+/*コンテンツエリアの設定*/
+
+/*トップにくるものは全てこれつける*/
+
+#top_content {
+    display: block;
+    margin: 100px auto 0px;
+}
+
+#contents {
+    width: 940px;
+    margin: 0 auto 100px;
+    font-size: 1.2em;
+}
+
+.bigmap {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.pagetop {
+    position: fixed;
+    bottom: 500px;
+    right: 80px;
+}
+
+/*もっと読む*/
+
+.more {
+    float: right;
+    font-size: 15px;
+}
+
+/*フッターの設定*/
+
+footer {
+    position: relative;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding-top: 15px;
+    background: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*footerナビエリアの設定*/
+
+#navbar_footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    font-size: 1.7em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarmain__menu {
+    display: flex;
+    margin: 0 20px 0px 120px;
+}
+
+.navbarmain__menu li {
+    margin: 0 30px;
+}
+
+.navbarmain__sns {
+    display: flex;
+    margin: 0 70px 0 20px;
+}
+
+.navbarmain__sns li {
+    margin: 0 15px;
+}
+
+
+
+#copy {
+    color: floralwhite;
+    margin-top: 380px;
+    display: block;
+    text-align: center;
+
+}
+
+
+/*パソコン用の設定*/
+
+@media (min-width: 480px) {
+    header {
+        display: none;
+    }
+
+
+
+}
+
+
+
+
+/*スマホ用の設定*/
+
+@media (max-width: 480px) {
+
+    #navbar {
+        display: none;
+    }
+
+    #navbar_port {
+        display: none;
+    }
+
+
+    .imageRow {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .set {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #toplogo img {
+        margin-left: 30px;
+    }
+    .set img {
+        margin: 10px;
+    }
+
+
+    #navbar_mob ul {
+        display: block;
+        margin: 0;
+        width: 100%;
+        padding: 30px;
+    }
+
+    #navbar_mob li {
+        margin-top: 25px;
+        list-style: none;
+        font-size: 15px;
+        /*        padding: 0;*/
+    }
+
+    #navbar_mob li img {
+        margin: 8px;
+    }
+
+    #topphoto {
+        display: block;
+        width: 100%;
+        height: 70%;
+    }
+    #centerph {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}

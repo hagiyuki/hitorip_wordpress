@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+
+.article_photo {
+    display: block;
+    margin: 20px auto;
+}
+
+#single_main {
+    max-width: 1366px;
+    margin: 90px auto 100px;
+    display: flex;
+}
+
+@media (max-width: 480px) {
+    #single_main {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #single_main img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+#single_back {
+    /*    margin: 100px;*/
+    max-height: 500px;
+    background-color: rgba(250, 180, 223, 0.09);
+
+}
+
+#single_text {
+    margin: 100px 150px;
+}
+
+@media (max-width: 480px) {
+    #single_text {
+        margin: 0px;
+        padding: 15px 15px;
+        text-align: left;
+    }
+}
+
+#single_text h2 {
+    font-size: 1.5em;
+    color: #d0c6c2;
+    text-align: center;
+    /*    background: linear-gradient(transparent 0%, #d0c6c2 80%);*/
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    #single_text h2 {
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+#single_text h3 {
+    font-size: 1.9em;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: myfont;
+
+}
+
+#single_article {
+    max-width: 1366px;
+    margin: 0 auto 150px;
+}
+
+.text_box h4,
+.text_box_second h4 {
+    font-size: 1.5em;
+    margin: 0 0 20px;
+    font-family: myfont;
+}
+
+.text_box p,
+.text_box_second p {
+    font-size: 1.04em;
+    letter-spacing: 0.1em
+}
+
+
+.box {
+    display: flex;
+    margin: 60px 30px;
+}
+
+.box .img_photo img {
+    width: 500px;
+}
+
+.box:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.box:nth-child(even) .img_photo {
+    margin: 0 0 0 20px;
+}
+
+.text_box,
+.text_box_second {
+    margin: 0 50px;
+}
+
+.text_box_second {
+    text-align: right;
+}
+
+@media (max-width: 480px) {
+    .box {
+        display: block;
+        padding: 0;
+    }
+    .img_photo img {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    .box .img_photo img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .text_box,
+    .text_box_second,
+    .text_box_second h4,
+    .text_box_second p {
+        text-align: center;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: left;
+    }
+
+}
+
+
+/*エリアインフォ*/
+
+#area_info {
+    max-width: 1366px;
+    background: url(../../images/single-colombia/back.png);
+    background-position: center;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 480px) {
+    #area_info {
+        display: block;
+    }
+
+}
+
+
+
+.text_info h4 {
+    text-align: center;
+    padding-top: 50px;
+
+
+
+}
+
+.text_info h1 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.text_info img {
+    float: right;
+    margin: -100px 350px 0 0;
+    /*    padding-top: 20px;*/
+    width: 150px;
+    height: 90px;
+    box-shadow: 2px 2px 4px gray;
+
+
+}
+
+
+.text_info h4 {
+    font-size: 35px;
+    color: #989391;
+    /*    text-decoration: underline;*/
+    border-bottom: solid 2px #989391;
+}
+
+@media (max-width: 480px) {
+
+    .text_info img {
+        display: none;
+    }
+}
+
+#wrap_info {
+    /*    display: flex;*/
+}
+
+/*
+#map_info {
+    height: 300px;
+}
+*/
+
+.google-maps {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#map_custmomize {
+    max-width: 2000px;
+    height: 400px;
+    margin: 60px auto;
+}
+
+@media screen and (max-width: 480px) {
+    #map_custmomize {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+.swiper-container {
+    max-width: 1366px;
+    background: url(../../images/single-colombia/back.png)
+}
+
+@media screen and (max-width: 480px) {
+    .swiper-slide {
+        font-size: 18px;
+        color: #080808;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        display: block;
+    }
+    .swiper-slide img {
+        width: 100%;
+    }
+}
